@@ -21,4 +21,21 @@
   - Create other pages:
     - about us
     - Jobs
-    - locations 
+    - locations
+
+- Add Glide Slider to a project https://glidejs.com/docs/setup/
+  1- npm install @glidejs/glide
+  2- Add to index.html <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+  3- Add Slider
+  <div class="glide">
+    <div data-glide-el="track" class="glide__track">
+      <ul class="glide__slides">
+        <li class="glide__slide"></li>
+        <li class="glide__slide"></li>
+        <li class="glide__slide"></li>
+      </ul>
+    </div>
+  </div>
+  4- import Glide from '@glidejs/glide'
+
+new Glide('.glide').mount()
